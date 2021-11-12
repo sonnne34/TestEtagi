@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.EditEstateObjectFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_header_edit_adress"
+                style="@style/TextHeader"
+                android:text="@string/adress"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edit_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_edit_floor"
+                style="@style/TextEdit"
+                android:inputType="date"
+                android:imeOptions="actionDone"
+                android:hint="@string/floor_add" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edit_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_edit_area"
+                style="@style/TextEdit"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:hint="@string/area_add" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edit_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_edit_rooms"
+                style="@style/TextEdit"
+                android:inputType="numberSigned"
+                android:imeOptions="actionDone"
+                android:hint="@string/rooms_add" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edit_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_edit_cost"
+                style="@style/TextEdit"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="@string/cost_add" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_edit_fragment"
+                style="@style/Button"
+                android:text="Изменить"/>
+
+            <Button
+                android:id="@+id/btn_cancel_edit"
+                style="@style/Button"
+                android:text="Отмена"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

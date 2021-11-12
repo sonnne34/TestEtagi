@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Этажи</string>
+    <string name="header">Этажи</string>
+    <string name="authentication_enter">Войти</string>
+    <string name="adress">Адрес</string>
+    <string name="cost">Цена</string>
+    <string name="area">Площадь</string>
+    <string name="password">Пароль</string>
+    <string name="email">Логин</string>
+    <string name="ye">руб.</string>
+    <string name="m2">м² </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prise">Цена</string>
+    <string name="rubm2">руб./м²</string>
+    <string name="rooms">- комнатная кв. | </string>
+    <string name="floor">| эт.</string>
+    <string name="new_object">Новый объект</string>
+    <string name="floor_add">Этаж (этаж кв. / этажность дома)</string>
+    <string name="area_add">Площадь квартиры</string>
+    <string name="rooms_add">Кол-во комнат</string>
+    <string name="cost_add">Стоимость</string>
+    <string name="add">Добавить</string>
+    <string name="close_add">Отмена</string>
+</resources>

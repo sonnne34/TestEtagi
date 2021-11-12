@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.testetagi.fragments.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_viewEstateFragment2"
+            app:destination="@id/viewEstateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewEstateFragment"
+        android:name="com.example.testetagi.fragments.ViewEstateFragment"
+        android:label="fragment_view_estate"
+        tools:layout="@layout/fragment_view_estate" />
+
+</navigation>
