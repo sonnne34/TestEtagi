@@ -142,11 +142,14 @@ class AddEstateObjectActivity : AppCompatActivity() {
                 //отправить фото
                 uploadImage()
 
-                //Диалоговое окно об успешной отправки
-                openSuccessDialog(this)
+                //Диалоговое окно об успешной отправке
+//                openSuccessDialog(this)
 
                 //обновить список объектов
                 EstateSingleton.notifyTwo()
+
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
 
 
             }

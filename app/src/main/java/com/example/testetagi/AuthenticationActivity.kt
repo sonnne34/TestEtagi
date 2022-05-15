@@ -56,7 +56,7 @@ class AuthenticationActivity : AppCompatActivity() {
 
     }
 
-    private fun openSession(){
+    private fun openSession() {
 
         if (mAuth?.currentUser != null) {
             // Уже вошел в систему
@@ -88,17 +88,21 @@ class AuthenticationActivity : AppCompatActivity() {
 
             // проверяем правильность ввода адреса электронной почты и пароля
             if (TextUtils.isEmpty(email)) {
-                Toast.makeText(applicationContext,
+                Toast.makeText(
+                    applicationContext,
                     "Введите корректный Email, Пожалуйста",
-                    Toast.LENGTH_LONG)
+                    Toast.LENGTH_LONG
+                )
                     .show()
                 return@setOnClickListener
             }
 
             if (TextUtils.isEmpty(password)) {
-                Toast.makeText(applicationContext,
+                Toast.makeText(
+                    applicationContext,
                     "Введите корректный пароль, Пожалуйста",
-                    Toast.LENGTH_LONG)
+                    Toast.LENGTH_LONG
+                )
                     .show()
                 return@setOnClickListener
             }
@@ -113,7 +117,7 @@ class AuthenticationActivity : AppCompatActivity() {
                     // если всё успешненько:
                     if (task.isSuccessful) {
 
-                            // сохраняем логин/пароль
+                        // сохраняем логин/пароль
                         val login: String = editUserName.text.toString()
                         saveTextLogin(login)
                         LoginSingleton.addLogin(login)
@@ -122,22 +126,24 @@ class AuthenticationActivity : AppCompatActivity() {
                         pbLoading.visibility = View.GONE
 
                         //приветствуем залогинившегося
-                        Toast.makeText(applicationContext,
+                        Toast.makeText(
+                            applicationContext,
                             "Добро пожаловать!",
-                            Toast.LENGTH_LONG)
+                            Toast.LENGTH_LONG
+                        )
                             .show()
 
                         // переходим к сл. активити
                         val intent = Intent(applicationContext, MainActivity::class.java)
                         startActivity(intent)
-                    }
-
-                    else {
+                    } else {
 
                         // если нет, то капец кто-то криворукий
-                        Toast.makeText(applicationContext,
+                        Toast.makeText(
+                            applicationContext,
                             "Ошибочка вышла",
-                            Toast.LENGTH_LONG)
+                            Toast.LENGTH_LONG
+                        )
                             .show();
 
                         // скрываем индикатор ProgressBar
@@ -157,7 +163,7 @@ class AuthenticationActivity : AppCompatActivity() {
     }
 
     //проверка подключения к интернету
-    private fun  networkMonitorResult(){
+    private fun networkMonitorResult() {
         networkMonitor.result = { isAvailable, type ->
             runOnUiThread {
                 when (isAvailable) {
@@ -169,14 +175,16 @@ class AuthenticationActivity : AppCompatActivity() {
                             ConnectionType.Cellular -> {
                                 Log.i("NETWORK_MONITOR_STATUS", "Cellular Connection")
                             }
-                            else -> { }
+                            else -> {}
                         }
                     }
                     false -> {
                         Log.i("NETWORK_MONITOR_STATUS", "No Connection")
-                        Toast.makeText(applicationContext,
+                        Toast.makeText(
+                            applicationContext,
                             "Проверьте подключение к интернету",
-                            Toast.LENGTH_LONG)
+                            Toast.LENGTH_LONG
+                        )
                             .show()
                     }
                 }
@@ -184,7 +192,7 @@ class AuthenticationActivity : AppCompatActivity() {
         }
     }
 
-    fun closeSession(){
+    fun closeSession() {
         //закрыть сессию
         FirebaseAuth.getInstance().signOut();
     }

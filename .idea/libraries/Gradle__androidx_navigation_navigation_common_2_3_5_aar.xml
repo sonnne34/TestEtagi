@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-3/6c86d4b8db1051482defa112cb792b64/transformed/navigation-common-2.3.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-3/6c86d4b8db1051482defa112cb792b64/transformed/navigation-common-2.3.5/res" />
       <root url="file://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-3/6c86d4b8db1051482defa112cb792b64/transformed/navigation-common-2.3.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6c86d4b8db1051482defa112cb792b64/transformed/navigation-common-2.3.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c86d4b8db1051482defa112cb792b64/transformed/navigation-common-2.3.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c86d4b8db1051482defa112cb792b64/transformed/navigation-common-2.3.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
